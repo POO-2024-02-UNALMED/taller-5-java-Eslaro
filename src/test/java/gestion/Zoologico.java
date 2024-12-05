@@ -40,7 +40,10 @@ public class Zoologico {
     public void setZonas(ArrayList<Zona> zonas) {
         this.zonas = zonas;
     }
-
+    public Zona getZona() {
+    	return this.getZona();
+    	
+    }
   
     public void agregarZonas(Zona zona) {
         this.zonas.add(zona);
