@@ -1,24 +1,46 @@
 package zooAnimales;
-
-import gestion.Zona;
 import java.util.ArrayList;
-
 public class Mamifero extends Animal {
-    private static ArrayList<Mamifero> listado = new ArrayList<>();
-    private static int caballos = 0;
-    private static int leones = 0;
+	
+	private static ArrayList<Mamifero> listado = new ArrayList<>();
+	public static int caballos = 0;
+    public static int leones = 0;
     private boolean pelaje;
     private int patas;
 
+   
+    public Mamifero() {
+        super();
+    }
+  
     public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas) {
-        super(nombre, edad, habitat, genero);
+        super(nombre, edad, habitat, genero, null); 
         this.pelaje = pelaje;
         this.patas = patas;
         listado.add(this);
     }
+    public static ArrayList<Mamifero> getListado() {
+        return listado;
+    }
 
-    public static int cantidadMamiferos() {
-        return listado.size();
+    public static void setListado(ArrayList<Mamifero> listado) {
+        Mamifero.listado = listado;
+    }
+
+    public boolean getPelaje() {
+        return pelaje;
+    }
+
+    public void setPelaje(boolean pelaje) {
+        this.pelaje = pelaje;
+    }
+
+    public int getPatas() {
+        return patas;
+    }
+
+    public void setPatas(int patas) {
+        this.patas = patas;
     }
 
     public static Mamifero crearCaballo(String nombre, int edad, String genero) {
@@ -29,5 +51,9 @@ public class Mamifero extends Animal {
     public static Mamifero crearLeon(String nombre, int edad, String genero) {
         leones++;
         return new Mamifero(nombre, edad, "selva", genero, true, 4);
+    }
+
+    public static int cantidadMamiferos() {
+        return listado.size();
     }
 }
