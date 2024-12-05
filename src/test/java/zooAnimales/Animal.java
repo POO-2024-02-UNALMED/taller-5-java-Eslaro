@@ -97,12 +97,12 @@ public class Animal {
                    ", habito en " + habitat +
                    " y mi genero es " + genero +
                    ", la zona en la que me ubico es " + zona.getNombre() +
-                   ", en el " + zona.getZoo().getNombre() + ".";
+                   ", en el " + zona.getZoo().getNombre() ;
         } else {
             return "Mi nombre es " + nombre +
                    ", tengo una edad de " + edad +
                    ", habito en " + habitat +
-                   " y mi genero es " + genero + ".";
+                   " y mi genero es " + genero ;
         }
     }
 }
