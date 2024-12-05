@@ -41,11 +41,11 @@ public class Anfibio extends Animal {
 	public String movimiento() {
 		return "saltar";
 	}
-	public Anfibio crearRana(String nombre, int edad, String genero) {
+	public static Anfibio crearRana(String nombre, int edad, String genero) {
 		ranas++;
 		return new Anfibio(nombre, edad, "selva", genero, "rojo", true);
 	}
-	public Anfibio crearSalamandra(String nombre, int edad, String genero) {
+	public static Anfibio crearSalamandra(String nombre, int edad, String genero) {
 		salamandras++;;
 		return new Anfibio(nombre, edad, "selva", genero, "negro", false );
 	}
