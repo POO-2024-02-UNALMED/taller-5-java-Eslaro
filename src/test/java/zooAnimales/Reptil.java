@@ -16,6 +16,7 @@ public class Reptil extends Animal {
 	}
 	public Reptil() {
 		super();
+		listado.add(this);
 	}
 	public String getColorEscamas() {
 		return colorEscamas;

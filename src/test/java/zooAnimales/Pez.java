@@ -17,6 +17,7 @@ public class Pez extends Animal {
 	}
 	public Pez() {
 		super();
+		listado.add(this);
 	}
 	public String getColorEscamas() {
 		return colorEscamas;
