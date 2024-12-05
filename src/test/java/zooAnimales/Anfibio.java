@@ -22,7 +22,7 @@ public class Anfibio extends Animal {
 	public void setColorPiel(String color) {
 		this.colorPiel = color;
 	}
-	public boolean getVenenoso() {
+	public boolean isVenenoso() {
 		return venenoso;
 	}
 	public void setVenenoso( boolean veneno) {

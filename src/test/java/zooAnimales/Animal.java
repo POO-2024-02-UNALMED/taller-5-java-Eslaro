@@ -81,7 +81,7 @@ public class Animal {
         int peces = Pez.cantidadPeces();
         int anfibios = Anfibio.cantidadAnfibios();
 
-        return "Mamíferos: " + mamiferos +
+        return "Mamiferos: " + mamiferos +
                "\nAves: " + aves +
                "\nReptiles: " + reptiles +
                "\nPeces: " + peces +
